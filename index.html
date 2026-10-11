@@ -41,7 +41,7 @@ h2{font-size:clamp(30px,4vw,42px);font-weight:600;margin:0 0 8px;text-align:cent
 .jp{font-family:"Noto Serif JP",serif;font-size:.72em;color:var(--red);display:block;letter-spacing:.3em;margin-bottom:4px}
 .lead{text-align:center;color:var(--muted);max-width:680px;margin:0 auto 40px;font-size:19px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:28px}
-.card{background:#f7f1e6;border:1px solid var(--line);text-decoration:none;color:var(--ink);display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.card{position:relative;background:#f7f1e6;border:1px solid var(--line);text-decoration:none;color:var(--ink);display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
 .card:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(60,40,20,.15)}
 .card img{aspect-ratio:16/9;object-fit:cover;width:100%}
 .card div{padding:16px 18px 20px}
@@ -49,6 +49,8 @@ h2{font-size:clamp(30px,4vw,42px);font-weight:600;margin:0 0 8px;text-align:cent
 .card p{margin:0;color:var(--muted);font-size:17px;line-height:1.5}
 .card .go{margin-top:10px;color:var(--red);font-size:16px;letter-spacing:.05em}
 .alt{background:var(--paper2)}
+.tag{position:absolute;top:12px;left:12px;background:var(--red);color:#fff;font-size:14px;letter-spacing:.14em;padding:3px 10px;text-transform:uppercase}
+.tag.season{background:#2b3a52}
 .about{display:grid;grid-template-columns:1fr 1.2fr;gap:44px;align-items:center}
 .about img{border:1px solid var(--line)}
 .about p{margin:0 0 14px}
@@ -79,7 +81,7 @@ footer img{width:44px;margin:0 auto 10px}
 <header>
   <div class="wrap">
     <a class="brand" href="#top"><img src="img/seal.png" alt="Izumi seal"><span translate="no">IZUMI JAPAN ART</span></a>
-    <nav><a href="#art">Art</a><a href="#calendars">Calendars</a><a href="#about">About</a><a href="#buy">Buy</a><a href="#follow">Contact</a></nav>
+    <nav><a href="#new">New</a><a href="#art">Art</a><a href="#about">About</a><a href="#buy">Buy</a><a href="#follow">Contact</a></nav>
   </div>
 </header>
 
@@ -87,33 +89,33 @@ footer img{width:44px;margin:0 auto 10px}
   <div class="wrap">
     <h1>Original Japanese art<br>from Odawara, near Hakone</h1>
     <p>Geisha and kimono portraits, sumi-e ink, ukiyo-e style prints, Christmas in Japan and 2027 calendars — made for your Samsung Frame TV, screens and prints.</p>
-    <a class="btn" href="https://izumijapanart.etsy.com">Visit the Etsy shop</a><a class="btn ghost" href="#art">See the collections</a>
+    <a class="btn" href="https://izumijapanart.etsy.com">Visit the Etsy shop</a><a class="btn ghost" href="#new">See what's new</a>
   </div>
 </div>
 
-<section id="art">
+<section id="new">
+  <div class="wrap">
+    <h2><span class="jp">新作・季節もの</span>New &amp; Seasonal</h2>
+    <p class="lead">The newest work and this season's collections. 2027 calendars come as printable PDFs (US Letter or A4) plus Frame TV images for every month.</p>
+    <div class="grid">
+      <a class="card" href="https://www.etsy.com/listing/4588931064"><span class="tag">NEW</span><img src="img/shogun-1.jpg" alt="Twelve samurai lords standing over an old map of Japan" loading="lazy"><div><h3>SHOGUN 2027</h3><p>Twelve great samurai lords over real Edo-period maps of the towns they ruled.</p><span class="go">View on Etsy →</span></div></a>
+      <a class="card" href="https://www.etsy.com/listing/4588718380"><span class="tag">NEW</span><img src="img/calendar-1.jpg" alt="January calendar page: New Year shrine visit" loading="lazy"><div><h3>A Year in Japan 2027</h3><p>One Japanese tradition each month, with the story behind it. Realistic or anime style.</p><span class="go">View on Etsy →</span></div></a>
+      <a class="card" href="https://www.etsy.com/listing/4586131295"><span class="tag season">Christmas</span><img src="img/xmasgeisha-1.jpg" alt="Geisha by a snowy lake with Mount Fuji, vintage tones" loading="lazy"><div><h3>Christmas Geisha</h3><p>A Japanese Christmas: geisha in red, blue, white, purple and black kimono. 215 paintings.</p><span class="go">View on Etsy →</span></div></a>
+      <a class="card" href="https://www.etsy.com/listing/4586158775"><span class="tag season">Christmas</span><img src="img/xmasscene-1.jpg" alt="Imagined Christmas tree among the torii gates of Fushimi Inari, Kyoto" loading="lazy"><div><h3>Christmas in Japan</h3><p>Imagined Christmas scenes at real places in Kyoto, Nara, Osaka, Tokyo, Hakone, Kanazawa and more.</p><span class="go">View on Etsy →</span></div></a>
+      <a class="card" href="https://www.etsy.com/listing/4583833453"><span class="tag season">Winter</span><img src="img/winter-1.jpg" alt="Geisha in winter kimono looking at snowy Lake Ashi and Mount Fuji" loading="lazy"><div><h3>Winter Geisha</h3><p>Geisha in winter kimono with snow and Mount Fuji. 120 paintings, also in vintage, pastel and black &amp; white.</p><span class="go">View on Etsy →</span></div></a>
+    </div>
+  </div>
+</section>
+
+<section id="art" class="alt">
   <div class="wrap">
     <h2><span class="jp">作品</span>Collections</h2>
     <p class="lead">Each collection is a digital download: high-resolution images in three screen sizes (16:9, 16:10, 3:2), every piece with my red seal 泉 (Izumi).</p>
     <div class="grid">
       <a class="card" href="https://www.etsy.com/listing/4586070241"><img src="img/bijinga-1.jpg" alt="Geisha in red kimono before a gold folding screen with a dragon" loading="lazy"><div><h3>Bijinga on Gold Screens</h3><p>Geisha in kimono before gold leaf folding screens. 20 paintings.</p><span class="go">View on Etsy →</span></div></a>
-      <a class="card" href="https://www.etsy.com/listing/4583833453"><img src="img/winter-1.jpg" alt="Geisha in winter kimono looking at snowy Lake Ashi and Mount Fuji" loading="lazy"><div><h3>Winter Geisha</h3><p>Geisha in winter kimono with snow and Mount Fuji. 120 paintings, also in vintage, pastel and black &amp; white.</p><span class="go">View on Etsy →</span></div></a>
       <a class="card" href="https://www.etsy.com/listing/4586272623"><img src="img/sumie-1.jpg" alt="Sumi-e ink painting of Lake Ashi and Mount Fuji" loading="lazy"><div><h3>Sumi-e · Hakone &amp; Fuji</h3><p>Ink wash paintings of 51 real places around Hakone, Odawara and Mount Fuji.</p><span class="go">View on Etsy →</span></div></a>
       <a class="card" href="https://www.etsy.com/listing/4586205970"><img src="img/ukiyoe-1.jpg" alt="Ukiyo-e style travellers crossing a river at Odawara on the Tokaido" loading="lazy"><div><h3>Ukiyo-e · Tokaido</h3><p>Geisha and travellers along the old Tokaido road, in the style of woodblock prints. 34 paintings.</p><span class="go">View on Etsy →</span></div></a>
       <a class="card" href="https://www.etsy.com/listing/4586232011"><img src="img/taisho-1.jpg" alt="Shin-hanga style Hakone Tozan Railway station in the 1920s" loading="lazy"><div><h3>Taisho Roman · 1920s Hakone</h3><p>Hakone a hundred years ago, in the style of shin-hanga prints. 49 paintings.</p><span class="go">View on Etsy →</span></div></a>
-      <a class="card" href="https://www.etsy.com/listing/4586131295"><img src="img/xmasgeisha-1.jpg" alt="Geisha by a snowy lake with Mount Fuji, vintage tones" loading="lazy"><div><h3>Christmas Geisha</h3><p>A Japanese Christmas: geisha in red, blue, white, purple and black kimono. 215 paintings.</p><span class="go">View on Etsy →</span></div></a>
-      <a class="card" href="https://www.etsy.com/listing/4586158775"><img src="img/xmasscene-1.jpg" alt="Imagined Christmas tree among the torii gates of Fushimi Inari, Kyoto" loading="lazy"><div><h3>Christmas in Japan</h3><p>Imagined Christmas scenes at real places in Kyoto, Nara, Osaka, Tokyo, Hakone, Kanazawa and more.</p><span class="go">View on Etsy →</span></div></a>
-    </div>
-  </div>
-</section>
-
-<section id="calendars" class="alt">
-  <div class="wrap">
-    <h2><span class="jp">暦</span>2027 Calendars</h2>
-    <p class="lead">Printable PDF calendars (US Letter or A4) plus Frame TV images for every month.</p>
-    <div class="grid">
-      <a class="card" href="https://www.etsy.com/listing/4588931064"><img src="img/shogun-1.jpg" alt="Twelve samurai lords standing over an old map of Japan" loading="lazy"><div><h3>SHOGUN 2027</h3><p>Twelve great samurai lords over real Edo-period maps of the towns they ruled.</p><span class="go">View on Etsy →</span></div></a>
-      <a class="card" href="https://www.etsy.com/listing/4588718380"><img src="img/calendar-1.jpg" alt="January calendar page: New Year shrine visit" loading="lazy"><div><h3>A Year in Japan 2027</h3><p>One Japanese tradition each month, with the story behind it. Realistic or anime style.</p><span class="go">View on Etsy →</span></div></a>
     </div>
   </div>
 </section>
