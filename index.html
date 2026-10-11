@@ -56,6 +56,12 @@ h2{font-size:clamp(30px,4vw,42px);font-weight:600;margin:0 0 8px;text-align:cent
 .links{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
 .links a{min-width:200px;text-align:center;border:1px solid var(--line);background:#f7f1e6;padding:16px 20px;text-decoration:none;color:var(--ink);font-size:20px}
 .links a small{display:block;color:var(--muted);font-size:15px}
+.buy{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:860px;margin:0 auto}
+.buy div{background:#f7f1e6;border:1px solid var(--line);padding:22px 22px 24px;text-align:center}
+.buy h3{margin:0 0 4px;font-size:24px;font-weight:600}
+.buy p{margin:0 0 14px;color:var(--muted);font-size:17px;line-height:1.5}
+.jpt{font-family:"Noto Serif JP",serif;font-size:15px}
+@media (max-width:760px){.buy{grid-template-columns:1fr}}
 .links a:hover{border-color:var(--red);color:var(--red)}
 footer{border-top:1px solid var(--line);padding:30px 0 40px;text-align:center;color:var(--muted);font-size:15px}
 footer img{width:44px;margin:0 auto 10px}
@@ -73,7 +79,7 @@ footer img{width:44px;margin:0 auto 10px}
 <header>
   <div class="wrap">
     <a class="brand" href="#top"><img src="img/seal.png" alt="Izumi seal"><span translate="no">IZUMI JAPAN ART</span></a>
-    <nav><a href="#art">Art</a><a href="#calendars">Calendars</a><a href="#about">About</a><a href="https://izumijapanart.etsy.com">Shop</a></nav>
+    <nav><a href="#art">Art</a><a href="#calendars">Calendars</a><a href="#about">About</a><a href="#buy">Buy</a><a href="#follow">Contact</a></nav>
   </div>
 </header>
 
@@ -119,20 +125,37 @@ footer img{width:44px;margin:0 auto 10px}
       <h2 style="text-align:left"><span class="jp">作家</span>About</h2>
       <p>I am <strong translate="no">Hideaki Izumi</strong> <span translate="no">(泉 英明)</span>, an artist and AI director living in Odawara — the old castle town of the Hojo clan, at the gate of Hakone and Mount Fuji. As a personal project, I share the beautiful and fun sides of Japan with people around the world.</p>
       <p>The shop opened on October 1, 2026. Every piece carries my seal 泉 (Izumi), and every place is named with its real prefecture.</p>
-      <p class="note">How the art is made: I design each picture with AI image tools, then choose, correct and finish it by hand. Scenes with Christmas lights or historical figures are imagined, not photographs of present-day Japan, and each listing says so.</p>
+      <p class="note">How the art is made: I do all the planning, concept and design of every work myself, and the pictures are created with AI image tools. They are not hand-painted. <span translate="no">作品の企画・立案・デザインはすべて私自身で行い、絵の制作にはAIを使っています。</span> Scenes with Christmas lights or historical figures are imagined, not photographs of present-day Japan, and each listing says so.</p>
+    </div>
+  </div>
+</section>
+
+<section id="buy">
+  <div class="wrap">
+    <h2><span class="jp">ご購入</span>How to buy</h2>
+    <p class="lead">The same collections are sold in two shops. <span translate="no" class="jpt">同じ作品を2つのお店で販売しています。</span></p>
+    <div class="buy">
+      <div><h3>Overseas customers</h3><p>Etsy — pay by card or PayPal, in your own currency.<br><span class="jpt">海外のお客様</span></p><a class="btn" href="https://izumijapanart.etsy.com">Buy on Etsy</a></div>
+      <div><h3><span translate="no">国内のお客様</span></h3><p><span class="jpt" translate="no">BASE（日本語）— クレジットカード・PAY ID あと払い。日本語のダウンロード案内つき。</span><br>Customers in Japan</p><a class="btn" href="https://izumijpnart.base.shop"><span translate="no">BASEで購入する</span></a></div>
     </div>
   </div>
 </section>
 
 <section id="follow" class="alt">
   <div class="wrap">
-    <h2><span class="jp">便り</span>Shop &amp; Follow</h2>
-    <p class="lead">New paintings appear first on Instagram and Pinterest.</p>
+    <h2><span class="jp">連絡・便り</span>Contact &amp; Follow</h2>
+    <p class="lead">New paintings and videos appear first on social media. For questions, message me on WhatsApp or LINE. <span translate="no" class="jpt">お問い合わせはLINE・WhatsAppからどうぞ。</span></p>
     <div class="links">
       <a href="https://izumijapanart.etsy.com">Etsy<small>izumijapanart</small></a>
       <a href="https://www.instagram.com/izumi.japan.art.odawara/">Instagram<small>@izumi.japan.art.odawara</small></a>
       <a href="https://www.pinterest.com/izumijapanart/">Pinterest<small>izumijapanart</small></a>
       <a href="https://www.facebook.com/izumijapanart">Facebook<small>izumijapanart</small></a>
+      <a href="https://x.com/izumijapanart">X<small>@izumijapanart</small></a>
+      <a href="https://www.youtube.com/@izumijapanart">YouTube<small>@izumijapanart</small></a>
+      <a href="https://www.tiktok.com/@izumijapanart_">TikTok<small>@izumijapanart_</small></a>
+      <a href="https://line.me/R/ti/p/@528mqdxs">LINE<small>Izumi Japan Art (official)</small></a>
+      <a href="https://wa.me/817035369654">WhatsApp<small>+81 70-3536-9654</small></a>
+      <a href="tel:+817035369654">Tel<small>070-3536-9654</small></a>
     </div>
   </div>
 </section>
